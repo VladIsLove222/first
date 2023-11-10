@@ -1,0 +1,40 @@
+body {
+    background-color: darkgreen;
+    color: #ecf0f1; 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.container1 div, .container2 div {
+    width: 90px;
+    height: 60px;
+    margin: 5px;
+    background-color: green;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#idButton{
+	height: 190px;
+	margin: 3px;
+	background-color: lightgreen; 
+	border: none;
+	border-radius: 20px
+}
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container1, .container2 {
+        margin-bottom: 20px;
+    }
+    #idButton {
+        margin: 10px 0;
+    }
+}
